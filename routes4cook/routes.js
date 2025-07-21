@@ -3,7 +3,7 @@ const router= express.Router();
 
 // write your required model imports here
 const { register, login } = require('../controllers/authController');
-const Recipe = require('../models/Recipe');
+const Recipe = require('../models/Recipes');
 
 // write your middleware imports here
 const authRateLimiter  = require("../middlewares/rateLimiter");
@@ -23,8 +23,8 @@ router.get('/search', async (req, res) => {
     const ingredients = query.split(/,|\s+and\s+|\s+or\s+/i).map(i => i.trim()).filter(Boolean);
 
     const recipes = await Recipe.find({
-      ingredients: { $in: ingredients }
-    }).limit(20);
+      NER: { $in: ingredients }
+    }).limit(40);
 
     res.json({ recipes });
   } catch (err) {
