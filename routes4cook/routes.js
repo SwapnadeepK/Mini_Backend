@@ -23,7 +23,7 @@ router.get('/search', async (req, res) => {
     const ingredients = query.split(/,|\s+and\s+|\s+or\s+/i).map(i => i.trim()).filter(Boolean);
 
     const recipes = await Recipe.find({
-      NER: { $in: ingredients }
+      NER: { $all: ingredients }
     }).limit(40);
 
     res.json({ recipes });
