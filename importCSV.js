@@ -18,7 +18,7 @@
 //   process.exit(1);
 // });
 
-// const FILE_PATH = 'dataset/dataset/full_dataset.csv'; // Adjust as needed
+// const FILE_PATH = './full_dataset.csv'; // Adjust as needed
 // const BATCH_SIZE = 1000;
 // let batch = [];
 // let totalRows = 0;
@@ -93,7 +93,7 @@
 // // and cli-progress for a progress bar during the import process.
 
 
-//Run this code with node importCSV.js
+// Run this code with node importCSV.js
 // This is used for importing data from a CSV file into MongoDB.
 // It reads a CSV file, processes each row, and inserts the data into a MongoDB collection.
 // The code includes error handling, progress tracking, and batch processing for efficiency.
