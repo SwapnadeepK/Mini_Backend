@@ -93,10 +93,10 @@
 // // and cli-progress for a progress bar during the import process.
 
 
-// Run this code with node importCSV.js
-// This is used for importing data from a CSV file into MongoDB.
-// It reads a CSV file, processes each row, and inserts the data into a MongoDB collection.
-// The code includes error handling, progress tracking, and batch processing for efficiency.
-// Do not delete this code as it is essential for importing the dataset into the database.
-// Run it again only if data base recipes collection is empty or you want to re-import the data.
-// Make sure to adjust the FILE_PATH and MONGO_URI as needed in your environment.
+// // Run this code with node importCSV.js
+// // This is used for importing data from a CSV file into MongoDB.
+// // It reads a CSV file, processes each row, and inserts the data into a MongoDB collection.
+// // The code includes error handling, progress tracking, and batch processing for efficiency.
+// // Do not delete this code as it is essential for importing the dataset into the database.
+// // Run it again only if data base recipes collection is empty or you want to re-import the data.
+// // Make sure to adjust the FILE_PATH and MONGO_URI as needed in your environment.
